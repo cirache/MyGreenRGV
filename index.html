@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title class="web-title">My Green RGV</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+  <link rel="icon" href="bio-leaves.png" type="bio-leaves.png">
+</head>
+<body>
+  
+    <h1>My Green RGV</h1>
+  
+  <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+  </div>
+
+<script>
+    function toggleLogin() {
+        var loginContainer = document.getElementById("loginContainer");
+        if (loginContainer.style.display === "none") {
+            loginContainer.style.display = "block";
+        } else {
+            loginContainer.style.display = "none";
+        }
+    }
+</script>
+
+<button class="btn" onclick="window.location.href='Login.html'">Login</button>
+
+
+
+
+
+
+<body>
+  <main>
+    <div class="carousel">
+      <img class="carousel-image" src="https://cdn.britannica.com/40/93540-050-48FF9C9E/items-recycling-centre.jpg" alt="Image 1">
+      <img class="carousel-image" src="https://media.istockphoto.com/id/670719454/photo/group-of-kids-school-volunteer-charity-environment.jpg?s=612x612&w=0&k=20&c=AC081NhGoX5o4yEZQJPmo6n698bS7EHiY1h7XjMZrsc=" alt="Image 2">
+      <img class="carousel-image" src="https://media.istockphoto.com/id/1323094421/photo/african-american-young-woman-recycling-garbage-sustainability-concept.jpg?s=612x612&w=0&k=20&c=r7JgS_cObti0lw-vXxZj__GUhADLIvc5AukBTfRStJk=" alt="Image 3">
+    </div>
+    <p class="description">Our goal is to make the RGV a cleaner place to live!
+      <!-- <code class="code">index.html</code>. The webview will auto-refresh as you edit! (See <code 
+        class="code">README.md</code> if you want to
+      disable auto-refresh.) -->
+    </p>
+
+    <section class="grid">
+      <a href="Map.html" class='card'>
+        <h2>Find Your Nearest Recycling Center &rarr;</h2>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=fdPZWvOUmX0" class='card'>
+        <h2>Learn how you can do your part in the valley &rarr;</h2>
+      </a>
+    </section>
+  </main>
+
+  <script>
+        let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel-image');
+
+    function showNextImage() {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.display = 'block';
+    }
+
+    setInterval(showNextImage, 3000); // Change image every 3 seconds
+  </script>
+
+   <footer class="footer">
+     <strong><p id="contactUs">Contact Us</p></strong>
+     <p>Phone:956-555-5555</p>
+     <p>Email: mygreenrgv@recycle.com</p>
+
+     <iframe src="https://free.timeanddate.com/clock/i9lkp1zx/n3484/fn4/fs12/pc111/ahr/avb/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="71" height="32"></iframe>
+
+ 
+   </footer>
+
+   <script src="https://climateclock.world/widget-v2.js" async></script>
+   <climate-clock />
+</body>
+
+</html>
